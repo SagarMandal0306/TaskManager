@@ -89,7 +89,7 @@ const onSubmit=(event)=>{
                             <label htmlFor="">Re-Enter Password</label>
                             <input type="text" placeholder='Re-Enter Password' name='repass' required onChange={handleInput}/>
                         </div>
-                        <input type="submit" value="Login" name='login' className='btn' onClick={onSubmit}/>
+                        <input type="submit" value="Signup" name='login' className='btn' onClick={onSubmit}/>
                         <p>Already Signup?<span onClick={()=>navigate("/user/login")}>Login</span></p>
                     </form>
                 </div>
