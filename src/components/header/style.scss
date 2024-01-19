@@ -1,0 +1,39 @@
+@import "../../mixins.scss";
+
+nav{
+    background-color: var(--black);
+    padding: 20px;
+    width: 100vw;
+    position: fixed;
+    // margin: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .right{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        p{
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            @include sm{
+                font-size: 20px;
+            }
+            font-weight: 500;
+            padding: 0 10px;
+            &:hover{
+                color: lightgray;
+            }
+        }
+    }
+    .nav-logo{
+        height: 50px;
+        width: 100px;
+        img{
+            height:100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+@import "../../mixins.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.task-data{
+    padding: 15px;
+    
+    .header{
+        height: 100%;
+        width: 100%;
+        
+    }
+    .body{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    .wrapper{
+        width: 80vw;
+            @include md{
+                width: 60vw;
+            }
+            .data-box{
+                background-color: var(--black);
+                border-radius: 10px;
+                padding: 20px;
+                margin: 10px 5px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 0 0 10px 0;
+                .left{
+                    text-align: left;
+                    p{
+                        color: lightgray;
+                        margin-bottom: 3px;
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                    h2{
+                        color: white;
+                        margin-bottom: 3px;
+                        font-size: 17px;
+                        font-weight: bold;
+                        // width: 500px;
+                        // overflow-y: scroll;
+                    }
+                    h2::-webkit-scrollbar{
+                        display: none;
+                    }
+                    span{
+                        padding: 4px;
+                        border-radius: 5px;
+                        background-color: red;
+                        color: white;
+                        font-size: 12px;
+                        margin: 3px;
+                        margin-left: 0;
+                    }
+                    .flag{
+                        background-color: white;
+                    }
+                }
+                .right{
+                    .icon{
+                        cursor: pointer;
+                    }
+                }
+
+
+            }
+        }
+    }
+    
+}
