@@ -3,8 +3,7 @@ import LoginPost from '../../../public/login-post.png';
 import { FaEye,FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router-dom';
 import './style.scss';
-import axios from 'axios';
-import Alerts from '../Alert';
+
 import { fetchDataFromApi } from '../../api/api';
 
 const Signup = () => {
